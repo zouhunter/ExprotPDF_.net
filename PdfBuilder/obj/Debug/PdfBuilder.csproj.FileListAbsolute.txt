@@ -1,0 +1,8 @@
+C:\Users\Administrator\Desktop\PdfBuilder\bin\Debug\PdfBuilder.exe.config
+C:\Users\Administrator\Desktop\UnityiTextSharp\PdfBuilder\bin\Debug\PdfBuilder.exe.config
+C:\Users\Administrator\Desktop\UnityiTextSharp\PdfBuilder\bin\Debug\PdfBuilder.exe
+C:\Users\Administrator\Desktop\UnityiTextSharp\PdfBuilder\bin\Debug\PdfBuilder.pdb
+C:\Users\Administrator\Desktop\UnityiTextSharp\PdfBuilder\obj\Debug\PdfBuilder.exe
+C:\Users\Administrator\Desktop\UnityiTextSharp\PdfBuilder\obj\Debug\PdfBuilder.pdb
+C:\Users\Administrator\Desktop\UnityiTextSharp\PdfBuilder\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\Users\Administrator\Desktop\UnityiTextSharp\PdfBuilder\bin\Debug\itextsharp.dll
