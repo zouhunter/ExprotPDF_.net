@@ -13,8 +13,10 @@ namespace PdfBuilder
         a: Console.Write("请选择章节：");
             var simple = new Simples();
             Console.Write("1 -- " + simple.chapKeys.Length + "\n");
-            var cha = Console.Read();
-            if(cha >= 49) simple.Start(cha -49);
+
+            var cha = Console.ReadLine();
+
+            simple.Start(int.Parse(cha));
 
             Console.WriteLine("Continue input :[y]");
             string key = Console.ReadLine();

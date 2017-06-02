@@ -83,13 +83,67 @@
     <Compile Include="Scripts\Chap04\Chap0403.cs" />
     <Compile Include="Scripts\Chap04\Chap0404.cs" />
     <Compile Include="Scripts\Chap04\Chap0405.cs" />
+    <Compile Include="Scripts\Chap08\Chap0804.cs" />
+    <Compile Include="Scripts\Chap08\Chap0803.cs" />
+    <Compile Include="Scripts\Chap08\Chap0802.cs" />
+    <Compile Include="Scripts\Chap08\Chap0801.cs" />
+    <Compile Include="Scripts\Chap07\Chap0702.cs" />
+    <Compile Include="Scripts\Chap06\Chap0616.cs" />
+    <Compile Include="Scripts\Chap06\Chap0615.cs" />
+    <Compile Include="Scripts\Chap06\Chap0614.cs" />
+    <Compile Include="Scripts\Chap06\Chap0613.cs" />
+    <Compile Include="Scripts\Chap06\Chap0611.cs" />
+    <Compile Include="Scripts\Chap06\Chap0610.cs" />
+    <Compile Include="Scripts\Chap06\Chap0609.cs" />
+    <Compile Include="Scripts\Chap06\Chap0608.cs" />
+    <Compile Include="Scripts\Chap06\Chap0607.cs" />
+    <Compile Include="Scripts\Chap06\Chap0606.cs" />
+    <Compile Include="Scripts\Chap06\Chap0605.cs" />
+    <Compile Include="Scripts\Chap06\Chap0604.cs" />
+    <Compile Include="Scripts\Chap06\Chap0603.cs" />
+    <Compile Include="Scripts\Chap06\Chap0602.cs" />
+    <Compile Include="Scripts\Chap06\Chap0601.cs" />
     <Compile Include="Scripts\Chap05\Chap0501.cs" />
+    <Compile Include="Scripts\Chap05\Chap0518.cs" />
+    <Compile Include="Scripts\Chap05\Chap0517.cs" />
+    <Compile Include="Scripts\Chap05\Chap0516.cs" />
+    <Compile Include="Scripts\Chap05\Chap0515.cs" />
+    <Compile Include="Scripts\Chap05\Chap0514.cs" />
+    <Compile Include="Scripts\Chap05\Chap0513.cs" />
+    <Compile Include="Scripts\Chap05\Chap0512.cs" />
+    <Compile Include="Scripts\Chap05\Chap0511.cs" />
+    <Compile Include="Scripts\Chap05\Chap0510.cs" />
+    <Compile Include="Scripts\Chap05\Chap0509.cs" />
+    <Compile Include="Scripts\Chap05\Chap0508.cs" />
+    <Compile Include="Scripts\Chap05\Chap0507.cs" />
+    <Compile Include="Scripts\Chap05\Chap0506.cs" />
+    <Compile Include="Scripts\Chap05\Chap0505.cs" />
+    <Compile Include="Scripts\Chap05\Chap0504.cs" />
+    <Compile Include="Scripts\Chap05\Chap0503.cs" />
     <Compile Include="Scripts\Chap05\Chap0502.cs" />
+    <Compile Include="Scripts\Chap11\Chap1102.cs" />
+    <Compile Include="Scripts\Chap11\Chap1101.cs" />
+    <Compile Include="Scripts\Chap10\Chap1015.cs" />
+    <Compile Include="Scripts\Chap10\Chap1014.cs" />
+    <Compile Include="Scripts\Chap10\Chap1013.cs" />
+    <Compile Include="Scripts\Chap10\Chap1012.cs" />
+    <Compile Include="Scripts\Chap10\Chap1011.cs" />
+    <Compile Include="Scripts\Chap10\Chap1010.cs" />
+    <Compile Include="Scripts\Chap10\Chap1009.cs" />
+    <Compile Include="Scripts\Chap10\Chap1008.cs" />
+    <Compile Include="Scripts\Chap10\Chap1007.cs" />
+    <Compile Include="Scripts\Chap10\Chap1006.cs" />
+    <Compile Include="Scripts\Chap10\Chap1005.cs" />
+    <Compile Include="Scripts\Chap10\Chap1004.cs" />
+    <Compile Include="Scripts\Chap10\Chap1003.cs" />
+    <Compile Include="Scripts\Chap10\Chap1002.cs" />
+    <Compile Include="Scripts\Chap09\Chap0901.cs" />
     <Compile Include="Scripts\Simples.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

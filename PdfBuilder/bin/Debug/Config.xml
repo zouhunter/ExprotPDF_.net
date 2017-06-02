@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Config>
+  <Sound>
+    <Master>Volume[100] : Switch[True]</Master>
+    <BGM>Volume[40] : Switch[True]</BGM>
+    <ENV>Volume[80] : Switch[True]</ENV>
+    <SystemSE>Volume[50] : Switch[True]</SystemSE>
+    <GameSE>Volume[70] : Switch[True]</GameSE>
+  </Sound>
+  <Text>
+    <TextFlag>True</TextFlag>
+    <WindowColor>1,1,1,1</WindowColor>
+  </Text>
+  <Etc>
+    <FemaleView>1</FemaleView>
+    <FemaleClothesState>3,3,3,3,3,3,3,3,3,3,3,3</FemaleClothesState>
+    <FemaleAccessoryState>2,2,2,2,2,2,2,2,2,2,2,2</FemaleAccessoryState>
+    <MaleType>0</MaleType>
+    <IsSon>False</IsSon>
+    <IsMaleClothes>True</IsMaleClothes>
+    <SemenType>1</SemenType>
+    <IsGomu>True</IsGomu>
+    <MainGuide>True</MainGuide>
+    <InteractiveGuide>True</InteractiveGuide>
+    <HGuide>True</HGuide>
+    <DressBoxGuide>True</DressBoxGuide>
+    <NightRoom>False</NightRoom>
+  </Etc>
+  <ImageEffect>
+    <Quality_>2</Quality_>
+    <CustomEffectEnable>True</CustomEffectEnable>
+    <imageEffect_>False,False,False,False,True,True,True,False,True,True,False,True,True,True</imageEffect_>
+    <SSAOSampleCount_>0</SSAOSampleCount_>
+    <Downsampling>3</Downsampling>
+    <Radius>0.01</Radius>
+    <Intensity>2</Intensity>
+    <Distance>1.13</Distance>
+    <Bias>0.19</Bias>
+    <LumContribution>0.5</LumContribution>
+    <OcclusionColor>0,0,0,1</OcclusionColor>
+    <threshold>1</threshold>
+    <softKnee>0.15</softKnee>
+    <radius>7</radius>
+    <intensity>3</intensity>
+    <highQuality>False</highQuality>
+    <antiFlicker>False</antiFlicker>
+    <VignetteIntensity>1</VignetteIntensity>
+    <smoothness>1</smoothness>
+    <roundness>1</roundness>
+    <blur>0.2</blur>
+    <desaturate>0</desaturate>
+    <amount>-1</amount>
+    <exposure>1.7</exposure>
+    <Tonemappingtonemapper>5</Tonemappingtonemapper>
+    <AntiMethod>1</AntiMethod>
+    <ColorSuitetoneMapping>False</ColorSuitetoneMapping>
+    <colorTemp>-0.056</colorTemp>
+    <colorTint>0.008</colorTint>
+    <saturation>1.332</saturation>
+    <redCurve></redCurve>
+    <greenCurve></greenCurve>
+    <blueCurve></blueCurve>
+    <rgbCurve></rgbCurve>
+    <fadeColor>0,0,0,0</fadeColor>
+    <ditherMode>0</ditherMode>
+    <resolution>1</resolution>
+    <screenBlendMode>0</screenBlendMode>
+    <radialBlurIterations>2</radialBlurIterations>
+    <sunColor>0.5735294,0.5355753,0.5355753,1</sunColor>
+    <sunThreshold>0.5955882,0.5904126,0.5868295,1</sunThreshold>
+    <sunShaftBlurRadius>2.5</sunShaftBlurRadius>
+    <sunShaftIntensity>3.43</sunShaftIntensity>
+  </ImageEffect>
+  <Debug>
+    <FPSFlag>False</FPSFlag>
+    <ThrowFlag_>True</ThrowFlag_>
+    <ThrowTime_>1</ThrowTime_>
+    <CameraParseFlag>False</CameraParseFlag>
+    <CameraParse>96</CameraParse>
+    <CameraScaleFlag>False</CameraScaleFlag>
+    <CameraScale>1</CameraScale>
+  </Debug>
+  <Light>
+    <rimLight>False</rimLight>
+    <skinLightPower>50</skinLightPower>
+    <skinShadowType>0</skinShadowType>
+  </Light>
+  <Input>
+    <controlType>1</controlType>
+    <recenterType>0</recenterType>
+    <hInteracticeType>1</hInteracticeType>
+    <cameraMoveAmount>1</cameraMoveAmount>
+  </Input>
+</Config>

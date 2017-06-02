@@ -6,3 +6,4 @@ C:\Users\Administrator\Desktop\UnityiTextSharp\PdfBuilder\obj\Debug\PdfBuilder.e
 C:\Users\Administrator\Desktop\UnityiTextSharp\PdfBuilder\obj\Debug\PdfBuilder.pdb
 C:\Users\Administrator\Desktop\UnityiTextSharp\PdfBuilder\bin\Debug\ICSharpCode.SharpZipLib.dll
 C:\Users\Administrator\Desktop\UnityiTextSharp\PdfBuilder\bin\Debug\itextsharp.dll
+C:\Users\Administrator\Desktop\UnityiTextSharp\PdfBuilder\obj\Debug\PdfBuilder.csprojResolveAssemblyReference.cache
