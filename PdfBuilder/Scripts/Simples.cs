@@ -24,15 +24,23 @@ public class Simples
 
     public void Start(int chapter)
     {
+        if (chapter >= chapKeys.Length || chapter <= 0) return;
         string chapterName = "Chap" + string.Format("{0:00}", chapter);
         string keys = string.Join("\n", chapKeys[chapter - 1]);
         Console.WriteLine("可选择列表：\n" + keys);
         //列出信息列表
         string id = Console.ReadLine();
-        string className = chapterName + string.Format("{0:00}", int.Parse(id));
-        Console.WriteLine("你选择了" + chapterName + "-->" + className);
-        LunchClass("Learn." + chapterName, className);
-        Console.ReadKey();
+        try
+        {
+            string className = chapterName + string.Format("{0:00}", int.Parse(id));
+            Console.WriteLine("你选择了" + chapterName + "-->" + className);
+            LunchClass("Learn." + chapterName, className);
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+        }
+        
     }
 
     public void LunchClass(string namespaceName, string className)

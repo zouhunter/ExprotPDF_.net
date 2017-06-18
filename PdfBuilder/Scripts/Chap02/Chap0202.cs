@@ -6,56 +6,61 @@ using iTextSharp.text;
 using iTextSharp.text.pdf;
 namespace Learn.Chap02
 {
-    public class Chap0201
+    public class Chap0202
     {
+
         public static void Main()
         {
 
-            Console.WriteLine("Chapter 2 example 1: Chunks and fonts");
+            Console.WriteLine("Chapter 2 example 2: Phrases");
 
             // step 1: creation of a document-object
             Document document = new Document();
 
             try
             {
+
                 // step 2:
                 // we create a writer that listens to the document
                 // and directs a PDF-stream to a file
-                PdfWriter.getInstance(document, new FileStream("Chap0201.pdf", FileMode.Create));
+                PdfWriter.getInstance(document, new FileStream("Chap0202.pdf", FileMode.Create));
 
                 // step 3: we open the document
                 document.Open();
 
-                // step 4: we Add content to the document
-                Font[] fonts = new Font[14];
-                fonts[0] = FontFactory.getFont(FontFactory.COURIER, 12, Font.NORMAL);
-                fonts[1] = FontFactory.getFont(FontFactory.COURIER, 12, Font.BOLD);
-                fonts[2] = FontFactory.getFont(FontFactory.COURIER, 12, Font.ITALIC);
-                fonts[3] = FontFactory.getFont(FontFactory.COURIER, 12, Font.BOLD | Font.ITALIC);
-                fonts[4] = FontFactory.getFont(FontFactory.HELVETICA, 12, Font.NORMAL);
-                fonts[5] = FontFactory.getFont(FontFactory.HELVETICA, 12, Font.BOLD);
-                fonts[6] = FontFactory.getFont(FontFactory.HELVETICA, 12, Font.ITALIC);
-                fonts[7] = FontFactory.getFont(FontFactory.HELVETICA, 12, Font.BOLD | Font.ITALIC);
-                fonts[8] = FontFactory.getFont(FontFactory.TIMES_NEW_ROMAN, 12, Font.NORMAL);
-                fonts[9] = FontFactory.getFont(FontFactory.TIMES_NEW_ROMAN, 12, Font.BOLD);
-                fonts[10] = FontFactory.getFont(FontFactory.TIMES_NEW_ROMAN, 12, Font.ITALIC);
-                fonts[11] = FontFactory.getFont(FontFactory.TIMES_NEW_ROMAN, 12, Font.BOLD | Font.ITALIC);
-                fonts[12] = FontFactory.getFont(FontFactory.SYMBOL, 12, Font.NORMAL);
-                fonts[13] = FontFactory.getFont(FontFactory.ZAPFDINGBATS, 12, Font.NORMAL);
-                for (int i = 0; i < 14; i++)
-                {
-                    Chunk chunk = new Chunk("This is some", fonts[i]);
-                    document.Add(new Phrase(chunk));
-                    document.Add(new Phrase(new Chunk(" font. ",
-                        fonts[i]).setTextRise((i % 2 == 0) ? -6 : 6)));
-                }
-                document.Add(new Phrase(new Chunk("This text is underlined",
-                    FontFactory.getFont(FontFactory.HELVETICA, 12, Font.UNDERLINE))));
-                document.Add(new Phrase(new Chunk("This font is of type ITALIC | STRIKETHRU",
-                    FontFactory.getFont(FontFactory.HELVETICA, 12, Font.ITALIC | Font.STRIKETHRU))));
-                Chunk ck = new Chunk("This text has a yellow background color", FontFactory.getFont(FontFactory.HELVETICA, 12));
-                ck.setBackground(new Color(0xFF, 0xFF, 0x00));
-                document.Add(new Phrase(ck));
+                // step 4: we Add a paragraph to the document
+                Phrase phrase0 = new Phrase();
+                Phrase phrase1 = new Phrase("(1) this is a phrase\n");
+                // In this example the leading is passed as a parameter
+                Phrase phrase2 = new Phrase(24, "(2) this is a phrase with leading 24. You can only see the difference if the line is long enough. Do you see it? There is more space between this line and the previous one.\n");
+                // When a Font is passed (explicitely or embedded in a chunk),
+                // the default leading = 1.5 * size of the font
+                Phrase phrase3 = new Phrase("(3) this is a phrase with a red, normal font Courier, size 20. As you can see the leading is automatically changed.\n", FontFactory.getFont(FontFactory.COURIER, 20, Font.NORMAL, new Color(255, 0, 0)));
+                Phrase phrase4 = new Phrase(new Chunk("(4) this is a phrase\n"));
+                Phrase phrase5 = new Phrase(18, new Chunk("(5) this is a phrase in Helvetica, bold, red and size 16 with a given leading of 18 points.\n", FontFactory.getFont(FontFactory.HELVETICA, 16, Font.BOLD, new Color(255, 0, 0))));
+                // A Phrase can contains several chunks with different fonts
+                Phrase phrase6 = new Phrase("(6)");
+                Chunk chunk = new Chunk(" This is a font: ");
+                phrase6.Add(chunk);
+                phrase6.Add(new Chunk("Helvetica", FontFactory.getFont(FontFactory.HELVETICA, 12)));
+                phrase6.Add(chunk);
+                phrase6.Add(new Chunk("Times New Roman", FontFactory.getFont(FontFactory.TIMES_NEW_ROMAN, 12)));
+                phrase6.Add(chunk);
+                phrase6.Add(new Chunk("Courier", FontFactory.getFont(FontFactory.COURIER, 12)));
+                phrase6.Add(chunk);
+                phrase6.Add(new Chunk("Symbol", FontFactory.getFont(FontFactory.SYMBOL, 12)));
+                phrase6.Add(chunk);
+                phrase6.Add(new Chunk("ZapfDingBats", FontFactory.getFont(FontFactory.ZAPFDINGBATS, 12)));
+                Phrase phrase7 = new Phrase("(7) if you don't Add a newline yourself, all phrases are glued to eachother!");
+
+                document.Add(phrase1);
+                document.Add(phrase2);
+                document.Add(phrase3);
+                document.Add(phrase4);
+                document.Add(phrase5);
+                document.Add(phrase6);
+                document.Add(phrase7);
+
             }
             catch (DocumentException de)
             {

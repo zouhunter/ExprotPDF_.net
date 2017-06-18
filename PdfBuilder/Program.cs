@@ -18,6 +18,7 @@ namespace PdfBuilder
 
             simple.Start(int.Parse(cha));
 
+            Console.ReadKey();
             Console.WriteLine("Continue input :[y]");
             string key = Console.ReadLine();
             if (key.ToUpper() == "Y")
